@@ -1,0 +1,44 @@
+.nav
+    display: flex
+    justify-content: center
+    align-items: center
+    border-bottom: 1px solid rgba(180, 180, 180, 0.1);
+    &__container
+        width: 1140px
+    &__navbar
+        display: flex
+        justify-content: space-between
+    &__links
+        width: 800px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    &__link
+        font-family: 'Fira Sans', sans-serif;
+        text-decoration: none
+        font-size: 13px;
+        font-weight: 400;
+        color: #595959;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover::after
+            content: "";
+            position: absolute;
+            border-bottom: 3px solid #cccccc;
+            display: block;
+            width: 100px;
+            top: 57px;
+    &__name
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 13px;
+        line-height: 29px;
+        font-weight: 400;
+        color: #2a2928;
+        margin-left: 5px
+        text-decoration: none
+    &__mail
+        display: flex;
+        justify-content: center;
+        align-items: center;
